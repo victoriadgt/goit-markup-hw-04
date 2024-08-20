@@ -77,7 +77,7 @@ img {
     text-decoration: none;
     color: #2E2F42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    position: relative;
 }
 
 .studio {
@@ -313,16 +313,6 @@ img {
     row-gap: 48px;
 }
 
-.forth-section-list-element {
-    flex-basis: calc((100% - 48px) / 4);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.forth-section-list-element:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-    transform: translateY(0%);
-}
-
 .forth-section-list-image {
     position: relative;
     overflow: hidden; 
@@ -343,8 +333,17 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.forth-section-list-image:hover {
+.forth-section-list-element-overlay-parag:hover {
     transform: translateY(0%);
+}
+
+.forth-section-list-element {
+    flex-basis: calc((100% - 48px) / 4);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.forth-section-list-element:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .container-portfolio {
@@ -394,7 +393,7 @@ img {
     line-height: 1.5; 
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px; 
+    margin: 0 0 16px 0;
 }
 
 .footer-social-list {
